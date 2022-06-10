@@ -1,0 +1,7 @@
+public class Bycicle extends Factory {
+
+	@Override
+	public FactoryProduct createProduct(String productName) {
+		if(productName == "Bycicle") {
+			return new Bycicle();
+		}

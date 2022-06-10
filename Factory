@@ -1,0 +1,11 @@
+public abstract class Factory {
+
+	public abstract Factory createProduct(String productName);
+	
+	public FactoryProduct produceProduct(String productName) {
+		FactoryProduct product = createProduct(productName);
+		product.prepare();
+		return product;
+	}
+
+}

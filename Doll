@@ -1,0 +1,7 @@
+public class Doll extends Factory {
+
+	@Override
+	public FactoryProduct createProduct(String productName) {
+		if(productName == "Doll") {
+			return new Doll();
+		}
